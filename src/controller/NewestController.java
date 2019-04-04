@@ -27,6 +27,8 @@ public class NewestController extends HttpServlet {
         DiscoveryService service = new DiscoveryService();
         List<Discovery> listOfDiscoveriesByTime =
                 service.getAllDiscoveriesFromLastDay((d1, d2) -> d2.getTimestamp().compareTo(d1.getTimestamp()));
+
+        System.out.println(listOfDiscoveriesByTime.get(0).getTimestamp());
         request.setAttribute("discoveries", listOfDiscoveriesByTime);
     }
 

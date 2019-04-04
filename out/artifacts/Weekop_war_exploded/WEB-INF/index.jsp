@@ -32,7 +32,7 @@
         <div class="col col-md-11 col-sm-10">
           <h3 class="centered"><a href="<c:out value="${discovery.url}" />"><c:out value="${discovery.name}" /></a></h3>
           <h6><small>Dodane przez: <c:out value="${discovery.user.username}" />,
-            Dnia: <fmt:formatDate value="${discovery.timestamp}" pattern="dd/mm/YYYY"/></small></h6>
+            Dnia: <fmt:formatDate value="${discovery.timestamp}" pattern="dd/MM/YYYY"/></small></h6>
           <p><c:out value="${discovery.description}" /></p>
           <a href="<c:out value="${discovery.url}" />" class="btn btn-default btn-xs">Przejdź do strony</a>
         </div>
