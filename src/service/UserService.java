@@ -58,4 +58,12 @@ public class UserService {
         discoveryDAO.deleteAllByUserID(userCopy.getId());
         userDAO.delete(userCopy);
     }
+    public void updatePassword(User user,String newPassword){
+        String Md5Password = encryptPassword(newPassword);
+        DAOFactory factory = DAOFactory.getDAOFactory();
+        UserDAO userDAO = factory.getUserDAO();
+        User userCopy = new User(user);
+        userCopy.setPassword(Md5Password);
+        userDAO.updatePassword(userCopy);
+    }
 }

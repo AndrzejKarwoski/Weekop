@@ -12,7 +12,9 @@ import util.ConnectionProvider;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class UserDAOImplementation implements UserDAO {
     private static final String CREATE_USER =
@@ -25,6 +27,8 @@ public class UserDAOImplementation implements UserDAO {
             "DELETE FROM user_role WHERE username = :username";
     private static final String DELETE_USER =
             "DELETE FROM user WHERE user_id = :user_id";
+    private static final String UPDATE_USER_PASSWORD =
+            "UPDATE user SET password=:password WHERE user_id=:user_id";
     private NamedParameterJdbcTemplate template;
 
     public UserDAOImplementation(){
@@ -57,6 +61,12 @@ public class UserDAOImplementation implements UserDAO {
         result = template.queryForObject(READ_USER,parameterSource,new UserRowMapper());
         return result;
     }
+
+    @Override
+    public boolean update(User object) {
+        return false;
+    }
+
     private class UserRowMapper implements RowMapper<User> {
 
         @Override
@@ -71,8 +81,13 @@ public class UserDAOImplementation implements UserDAO {
     }
 
     @Override
-    public boolean update(User object) {
-        return false;
+    public boolean updatePassword(User user) {
+        Map<String,Object> parameterMap = new HashMap<>();
+        parameterMap.put("user_id",user.getId());
+        parameterMap.put("password",user.getPassword());
+        SqlParameterSource parameterSource = new MapSqlParameterSource(parameterMap);
+        template.update(UPDATE_USER_PASSWORD,parameterSource);
+        return true;
     }
 
     @Override
