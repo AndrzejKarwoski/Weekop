@@ -7,15 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b21ed441-3e29-47a7-9372-f5116381d306" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/ChangePasswordController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Weekop_war_exploded/WEB-INF/classes/controller/DeleteAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Weekop_war_exploded/WEB-INF/classes/controller/DeleteAccountController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Weekop/controller/DeleteAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Weekop/controller/DeleteAccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/DeleteAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DeleteAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDAOImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAOImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/DiscoveryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/DiscoveryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/UserService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -292,7 +286,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554378639811" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554378906526" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Pulpit/weekop01" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -406,18 +400,26 @@
       <workItem from="1554230503260" duration="391000" />
       <workItem from="1554298179367" duration="12092000" />
       <workItem from="1554365482905" duration="417000" />
-      <workItem from="1554376692127" duration="1906000" />
+      <workItem from="1554376692127" duration="2150000" />
     </task>
+    <task id="LOCAL-00001" summary="added posibility to change password">
+      <created>1554378838530</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554378838530</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46045000" />
+    <option name="totallyTimeSpent" value="46289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48387095" visible="true" weight="0.18283582" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48387095" visible="true" weight="0.18283582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -427,7 +429,7 @@
       <window_info id="Web" order="7" side_tool="true" weight="0.26332623" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33586133" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33586133" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49134487" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -491,6 +493,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added posibility to change password" />
+    <option name="LAST_COMMIT_MESSAGE" value="added posibility to change password" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/OneDrive/Pulpit/Spring JDBC/bootstrap-theme.min.css">
