@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Comparator;
 import java.util.List;
 
 @WebServlet("/newest")
@@ -27,8 +26,6 @@ public class NewestController extends HttpServlet {
         DiscoveryService service = new DiscoveryService();
         List<Discovery> listOfDiscoveriesByTime =
                 service.getAllDiscoveriesFromLastDay((d1, d2) -> d2.getTimestamp().compareTo(d1.getTimestamp()));
-
-        System.out.println(listOfDiscoveriesByTime.get(0).getTimestamp());
         request.setAttribute("discoveries", listOfDiscoveriesByTime);
     }
 
