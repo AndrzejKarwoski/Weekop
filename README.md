@@ -17,9 +17,9 @@ An internet website which I created by learning from the JavaEE course from Java
 
 ## Technologies: 
 
-JDK 11
-JavaEE
-Spring JDBC - version 5.0.8
-Bootstrap - version 3.3.7
-JSTL - version 1.2.5
-Tomcat - version 9.0.16
+- JDK 11
+- JavaEE
+- Spring JDBC - version 5.0.8
+- Tomcat - version 9.0.16
+- Bootstrap - version 3.3.7
+- JSTL - version 1.2.5
