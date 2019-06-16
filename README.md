@@ -10,9 +10,6 @@ An internet website which I created by learning from the JavaEE course from Java
 - vote for a discovery ( + / - ) 
 - view the discoveries added by users over the last 24 hours.
 
-## Things that I want to add to the site:
-- adding comments to discoveries
-- deleting discoveries
 
 
 ## Technologies: 
